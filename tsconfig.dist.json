@@ -1,0 +1,10 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"allowImportingTsExtensions": null,
+		"noEmit": false,
+		"declaration": true,
+		"outDir": "./dist"
+	},
+	"include": ["index.ts", "src"]
+}

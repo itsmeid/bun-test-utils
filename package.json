@@ -1,0 +1,65 @@
+{
+	"name": "@itsmeid/bun-test-utils",
+	"version": "0.1.0",
+	"description": "Hassle-free tools for effortless testing, helping you deliver quality code faster and easier",
+	"author": "itsmeid",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itsmeid/bun-test-utils.git"
+	},
+	"homepage": "https://github.com/itsmeid/bun-test-utils#readme",
+	"bugs": {
+		"url": "https://github.com/itsmeid/bun-test-utils/issues"
+	},
+	"license": "MIT",
+	"publishConfig": {
+		"access": "public"
+	},
+	"keywords": ["test-utility", "test-tools", "unit-test", "bun", "bun-test", "development"],
+	"types": "./dist/index.d.ts",
+	"main": "./dist/index.js",
+	"module": "./dist/index.js",
+	"files": ["dist"],
+	"type": "module",
+	"scripts": {
+		"reinstall": "rm -rf node_modules && bun install",
+		"format": "bunx biome format",
+		"lint": "bunx biome lint",
+		"check": "biome check",
+		"full-check": "bun check && bun test",
+		"test": "bun test",
+		"docs": "bunx typedoc && bun ./script/finishing-docs.ts",
+		"build": "rm -rf dist && bunx tsc -p tsconfig.dist.json",
+		"dist": "bun full-check && bun docs && bun run build",
+		"prepare": "bunx husky",
+		"prepublishOnly": "bun dist"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/bun": "latest",
+		"husky": "^9.1.6",
+		"typedoc": "^0.26.8",
+		"typedoc-plugin-markdown": "^4.2.9",
+		"typescript": "^5.5.3"
+	},
+	"peerDependencies": {
+		"@happy-dom/global-registrator": "^15.0.0",
+		"@itsmeid/handy-utility-types": "^1.0.0"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"require": "./dist/index.js",
+			"bun": "./dist/index.js",
+			"default": "./dist/index.js"
+		},
+		"./*": {
+			"types": "./dist/src/*.d.ts",
+			"import": "./dist/src/*.js",
+			"require": "./dist/src/*.js",
+			"bun": "./dist/src/*.js",
+			"default": "./dist/src/*.js"
+		}
+	}
+}
