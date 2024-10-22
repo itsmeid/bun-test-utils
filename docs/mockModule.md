@@ -52,7 +52,7 @@ type MockModule<TModule, TFactory>: ReturnType<typeof mockModule>;
 
 #### Defined in
 
-src/mock-module.ts:13
+[src/mock-module.ts:13](https://github.com/itsmeid/bun-test-utils/blob/fab276da470737e4ef49df8d15009a398a141dce/src/mock-module.ts#L13)
 
 ## Functions
 
@@ -290,4 +290,4 @@ restore();
 
 #### Defined in
 
-src/mock-module.ts:72
+[src/mock-module.ts:72](https://github.com/itsmeid/bun-test-utils/blob/fab276da470737e4ef49df8d15009a398a141dce/src/mock-module.ts#L72)

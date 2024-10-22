@@ -51,7 +51,7 @@ type AutoMock<TModule, TOverride>: ReturnType<typeof autoMock>;
 
 #### Defined in
 
-src/auto-mock.ts:12
+[src/auto-mock.ts:12](https://github.com/itsmeid/bun-test-utils/blob/fab276da470737e4ef49df8d15009a398a141dce/src/auto-mock.ts#L12)
 
 ## Functions
 
@@ -197,4 +197,4 @@ console.log(mockWithOverrides.bar);   // Output will be a mock value, not 42
 
 #### Defined in
 
-src/auto-mock.ts:65
+[src/auto-mock.ts:65](https://github.com/itsmeid/bun-test-utils/blob/fab276da470737e4ef49df8d15009a398a141dce/src/auto-mock.ts#L65)

@@ -367,4 +367,4 @@ A promise that resolves when the reset is complete.
 
 #### Defined in
 
-src/global-dom.ts:33
+[src/global-dom.ts:33](https://github.com/itsmeid/bun-test-utils/blob/fab276da470737e4ef49df8d15009a398a141dce/src/global-dom.ts#L33)

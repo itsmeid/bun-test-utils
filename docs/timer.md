@@ -286,7 +286,7 @@ fakeTimer.clearTimeout(id); // Cancels the callback if not yet executed
 
 #### Defined in
 
-src/timer.ts:40
+[src/timer.ts:40](https://github.com/itsmeid/bun-test-utils/blob/fab276da470737e4ef49df8d15009a398a141dce/src/timer.ts#L40)
 
 ***
 
@@ -358,4 +358,4 @@ restore(); // Restores the original global timer functions
 
 #### Defined in
 
-src/timer.ts:153
+[src/timer.ts:153](https://github.com/itsmeid/bun-test-utils/blob/fab276da470737e4ef49df8d15009a398a141dce/src/timer.ts#L153)
